@@ -1,0 +1,24 @@
+{
+  "changeId": "change-123",
+  "status": "READY_FOR_REVIEW",
+  "planVersion": 1,
+  "summary": [
+    {
+      "path": "service-b.runtime.workers",
+      "action": "replace-override",
+      "before": 8,
+      "after": 12
+    },
+    {
+      "path": "service-b.retry.maxAttempts",
+      "action": "add-override",
+      "inheritedValue": 3,
+      "after": 5
+    }
+  ],
+  "validation": {
+    "schema": "passed",
+    "helmRender": "passed",
+    "policy": "passed"
+  }
+}

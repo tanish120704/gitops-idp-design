@@ -1,0 +1,17 @@
+{
+  "deploymentId": "tenant-b",
+  "service": "service-b",
+  "changes": [
+    {
+      "operation": "set",
+      "path": "/runtime/workers",
+      "value": 12
+    },
+    {
+      "operation": "set",
+      "path": "/retry/maxAttempts",
+      "value": 5
+    }
+  ],
+  "reason": "Increase worker capacity and retry attempts"
+}
